@@ -1,0 +1,6 @@
+body, td { background-color: hsl(0, 46%, 95%) }
+a:link, a:visited { color: hsl(0, 46%, 47%) }
+header, a:hover, th, dl.steps > dt::before, dl.steps li::before { background-color: hsl(0, 46%, 47%) }
+a:hover, th, dl.steps > dt::before, dl.steps li::before { color: hsl(0, 46%, 95%) }
+h2, h3, h3::after { border-color: hsl(0, 46%, 47%) }
+ul { list-style-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10" width="1em" height="1em"><rect x="6" y="4" width="3" height="3" fill="hsl(0, 46%, 47%)" style="shape-rendering: crispEdges"/></svg>') }
