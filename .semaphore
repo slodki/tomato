@@ -36,7 +36,7 @@ setup() {
     && chmod +x github_releases_upload.sh; cd -
 #  docker-cache restore
   docker build -t buildenv --build-arg myuser="$N" --build-arg uid=$UID - <<-'eof'
-	FROM debian:8
+	FROM debian:stretch-slim
 	LABEL Description="tomato firmware build environment" Vendor="slodki" Version="1.1"
 	ARG myuser
 	ARG uid
