@@ -2226,8 +2226,8 @@ libiconv-install: libiconv
 		ln -sf libiconv.so.2.6.0 libiconv.so
 
 transmission/stamp-h1: openssl libcurl libevent zlib
-	cd transmission && CC=$(CC) STRIP='mipsel-uclibc-strip' \
-		rm m4/glib-gettext.m4 && autoreconf -f && \
+	cd transmission && rm m4/glib-gettext.m4 && CC=$(CC) STRIP='mipsel-uclibc-strip' \
+		autoreconf -f && \
 		CFLAGS="-Os -Wall -fno-delete-null-pointer-checks -funit-at-a-time \
 			--param large-function-growth=800 --param max-inline-insns-single=3000 \
 			-ffunction-sections -fdata-sections" \
